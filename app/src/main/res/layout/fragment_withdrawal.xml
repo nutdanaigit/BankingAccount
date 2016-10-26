@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_withdrawal"
+        android:text="Withdrawal"
+        android:textSize="30sp"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:layout_below="@+id/txt_withdrawal"
+        android:id="@+id/relative_withdrawal_one"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_withdrawal_note"
+            android:text="@string/txt_deposit_note"
+            android:textSize="25sp"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txt_withdrawal_amount"
+            android:text="@string/txt_deposit_amount"
+            android:textSize="25sp"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/relative_withdrawal_one"
+        android:id="@+id/relative_withdrawal_two"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/check_withdrawal_thousand"
+            android:layout_alignParentLeft="true"
+            android:text="Thousand"
+            android:layout_marginTop="4dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edit_withdrawal_amount_thousand"
+            android:inputType="number"
+            android:hint="number"
+            android:maxLength="3"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/relative_withdrawal_two"
+        android:id="@+id/relative_withdrawal_three"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/check_withdrawal_five_hundred"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="4dp"
+            android:text="Five Hundred"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edit_withdrawal_amount_five_hundred"
+            android:inputType="number"
+            android:hint="number"
+            android:maxLength="3"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/relative_withdrawal_three"
+        android:id="@+id/relative_withdrawal_four"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/check_withdrawal_hundred"
+            android:layout_alignParentLeft="true"
+            android:text="Hundred"
+            android:layout_marginTop="4dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edit_withdrawal_amount_hundred"
+            android:inputType="number"
+            android:hint="number"
+            android:maxLength="3"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@+id/relative_withdrawal_four"
+        android:id="@+id/txt_withdrawal_amount_type"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/txt_withdrawal_amount_type"
+        android:id="@+id/txt_withdrawal_amount_money"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_withdrawal"
+        android:text="withdrawal"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/style_background" />
+
+    <!--<ImageView-->
+    <!--android:id="@+id/image_key"-->
+    <!--android:src="@drawable/ic_lock_two"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_show_enter_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter PIN"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_pin"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:hint="PIN"
+            android:inputType="numberPassword"
+            android:textColorHint="@color/colorWhite" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel    "
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/txt_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="After PIN entered"
+                android:textColor="@color/colorWhite" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
